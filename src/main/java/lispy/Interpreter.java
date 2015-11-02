@@ -31,6 +31,7 @@ public class Interpreter {
                 .collect(Collectors.toList());
 
         // then evaluate the procedure as applied to the list of arg values
+
         Object proc = argValues.get(0);
         List<Object> args = argValues.stream().skip(1).collect(Collectors.toList());
         if(proc instanceof FunctionListArgs) {
